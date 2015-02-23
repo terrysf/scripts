@@ -20,12 +20,12 @@ def generate(length):
     char =  random.choice(letters)
     upper = random.randint(0,1)
     if upper == True:
-      list.append(char.upper())
+      char_list.append(char.upper())
     else:
-      list.append(char)
+      char_list.append(char)
 
-  random.shuffle(list)
-  for item in list:
+  random.shuffle(char_list)
+  for item in char_list:
     ret+=item
   
   return ret
