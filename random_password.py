@@ -1,4 +1,4 @@
-#Generates a random password of desired length with one special character and one number
+#Generates a random password of desired length with one special character and one number :)
 import random
 import argparse
 import os
@@ -12,8 +12,8 @@ def generate(length):
   ret = ''
   random.seed(os.urandom(random.randint(1,1000)))
   number = random.choice(numbers)
-  char_list.append(number)
   special = random.choice(specials)
+  char_list.append(number)
   char_list.append(special)
 
   for i in xrange(length-2):
